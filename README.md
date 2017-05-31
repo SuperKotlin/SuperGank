@@ -36,8 +36,8 @@ SupeiGank是一个练手用的小项目，其中可以学到butterknife、cardvi
          compile 'com.mikepenz:fontawesome-typeface:4.5.0.1@aar'
          compile 'com.mikepenz:foundation-icons-typeface:3.0.0.1@aar'
          compile 'com.umeng.analytics:analytics:latest.integration'
-         compile 'com.amap.api:location:latest.integration'//颜色选择
-         compile 'cn.qqtheme.framework:ColorPicker:1.1.3'
+         compile 'com.amap.api:location:latest.integration'
+         compile 'cn.qqtheme.framework:ColorPicker:1.1.3'//颜色选择
          compile 'com.jakewharton:butterknife:8.0.1'
          apt 'com.jakewharton:butterknife-compiler:8.0.1'
          compile 'com.afollestad.material-dialogs:core:0.9.0.2'
