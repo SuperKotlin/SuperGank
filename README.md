@@ -45,7 +45,7 @@ SupeiGank是一个练手用的小项目，其中可以学到butterknife、cardvi
     }
 
 ### 感谢
- - [干货集中营](http://gank.io/)提供的数据
+ - [gank.io](http://gank.io/)提供的数据
  - [小米天气](https://github.com/sangenan/Weather)自定义view及动画
  - [ResideLayout](https://github.com/dongjunkun/ResideLayout)3D侧滑菜单
  - [CircleImageView](https://github.com/hdodenhof/CircleImageView)圆形图片
