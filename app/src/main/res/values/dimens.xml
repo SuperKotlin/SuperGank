@@ -1,0 +1,10 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="big_lager">22sp</dimen>
+    <dimen name="small">14sp</dimen>
+    <dimen name="medum">16sp</dimen>
+    <dimen name="lager">18sp</dimen>
+    <dimen name="lager_two">20sp</dimen>
+</resources>

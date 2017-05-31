@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_name"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@drawable/btn_click_selector"
+    android:drawablePadding="5dp"
+    android:ellipsize="end"
+    android:gravity="center_vertical"
+    android:lines="1"
+    android:paddingLeft="25dp"
+    android:singleLine="true"
+    android:text=""
+    android:textColor="@color/text_color"
+    android:textSize="@dimen/medum" />
+
