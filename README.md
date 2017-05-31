@@ -1,7 +1,7 @@
 #SuperGank
 
 ### 介绍
-SupeiGank是一个练手用的小项目，其中可以学到butterknife、cardview、rxjava、retrofit2、circleimageview、photoview、picasso以及其他常见的框架和自定义view。采用传统的MVC模式开发，代码简单易懂，适合新手学习。
+SupeiGank是一个练手用的小项目，其中可以学到butterknife、cardview、rxjava、retrofit2、circleimageview、photoview、picasso以及其他常见的框架和自定义view。本项目采用Retrofit+Rxjava+Picasso混合开发，采用MVC模式，简单易懂，适合新手学习。
 ### apk下载地址
  - [SuperGanK](https://fir.im/nd72)
 
