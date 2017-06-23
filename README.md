@@ -59,5 +59,5 @@ SupeiGank是一个练手用的小项目，其中可以学到butterknife、cardvi
 ![](/art/wechat.jpg)
 
 ### 关于我
- - 我的简书：[helloworld_joy](http://www.jianshu.com/users/c96d2a9d160f/timeline)
+ - 我的简书：[BraveJoy](http://www.jianshu.com/users/c96d2a9d160f/timeline)
  - 我的github：[SuperKotlin](https://github.com/SuperKotlin)
