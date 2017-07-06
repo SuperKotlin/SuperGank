@@ -57,9 +57,6 @@
             android:name=".activity.GankGirlActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.ImagePagerActivity"
-            android:screenOrientation="portrait" />
-        <activity
             android:name=".activity.GanHuoActivity"
             android:screenOrientation="portrait" />
         <activity

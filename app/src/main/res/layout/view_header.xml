@@ -5,16 +5,17 @@
     android:background="@color/white"
     android:orientation="vertical">
 
-    <com.zhuyong.supergank.weather.WeatherAnimView
-        android:id="@+id/weather"
+    <ImageView
+        android:id="@+id/img_weather_bg"
         android:layout_width="match_parent"
-        android:layout_height="300dp" />
+        android:layout_height="300dp"
+        android:scaleType="centerCrop" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:orientation="vertical">
+        android:layout_height="240dp"
+        android:orientation="vertical"
+        android:paddingLeft="15dp">
 
         <TextView
             android:id="@+id/tv_address"
@@ -73,7 +74,7 @@
                 android:gravity="center"
                 android:text=""
                 android:textColor="@color/white"
-                android:textSize="@dimen/lager_two" />
+                android:textSize="@dimen/lager" />
 
         </LinearLayout>
 
@@ -107,7 +108,7 @@
                 android:gravity="center"
                 android:text=""
                 android:textColor="@color/white"
-                android:textSize="@dimen/lager_two" />
+                android:textSize="@dimen/lager" />
 
         </LinearLayout>
 
@@ -141,7 +142,7 @@
                 android:gravity="center"
                 android:text=""
                 android:textColor="@color/white"
-                android:textSize="@dimen/lager_two" />
+                android:textSize="@dimen/lager" />
 
         </LinearLayout>
 

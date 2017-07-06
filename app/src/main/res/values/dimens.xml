@@ -6,5 +6,4 @@
     <dimen name="small">14sp</dimen>
     <dimen name="medum">16sp</dimen>
     <dimen name="lager">18sp</dimen>
-    <dimen name="lager_two">20sp</dimen>
 </resources>

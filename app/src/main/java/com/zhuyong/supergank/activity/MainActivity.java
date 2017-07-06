@@ -95,6 +95,7 @@ public class MainActivity extends BaseActivity implements SwipeRefreshLayout.OnR
     private TextView mTvWind;
     private TextView mTvWeather;
     private TextView mTvTemperaturePeople;
+    private ImageView mImgWeatherBg;
 
     Handler handler = new Handler() {
         @Override
@@ -327,6 +328,10 @@ public class MainActivity extends BaseActivity implements SwipeRefreshLayout.OnR
         mTvWind = (TextView) view.findViewById(R.id.tv_wind);
         mTvWeather = (TextView) view.findViewById(R.id.tv_weather);
         mTvTemperaturePeople = (TextView) view.findViewById(R.id.tv_temperature_people);
+        mImgWeatherBg = (ImageView) view.findViewById(R.id.img_weather_bg);
+        mImgWeatherBg.setImageBitmap(
+                BitmapUtils.fastblur(mContext, BitmapFactory.decodeResource(mContext.getResources()
+                        , R.mipmap.main_bg), 1f, 15f));
     }
 
     private void dealWithAdapter(final RecyclerArrayAdapter<Weather.DataBean.ResultWeatherDataList> adapter) {

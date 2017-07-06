@@ -1,6 +1,5 @@
 package com.zhuyong.supergank.activity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
@@ -11,6 +10,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import com.SuperKotlin.pictureviewer.ImagePagerActivity;
+import com.SuperKotlin.pictureviewer.PictureConfig;
 import com.jude.easyrecyclerview.EasyRecyclerView;
 import com.jude.easyrecyclerview.adapter.RecyclerArrayAdapter;
 import com.umeng.analytics.MobclickAgent;
@@ -88,19 +89,23 @@ public class HotGirlActivity extends BaseActivity implements SwipeRefreshLayout.
         adapter.setOnItemClickListener(new RecyclerArrayAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(int position) {
-                jumpActivity(adapter,position);
+                jumpActivity(adapter, position);
             }
         });
     }
 
     private void jumpActivity(RecyclerArrayAdapter<String> adapter, int position) {
-        Intent intent = new Intent(mContext, ImagePagerActivity.class);
-        intent.putExtra(ImagePagerActivity.EXTRA_IMAGE_URLS, (ArrayList<String>) adapter.getAllData());
-        intent.putExtra(ImagePagerActivity.EXTRA_IMAGE_INDEX, position);
-        mContext.startActivity(intent);
+        PictureConfig config = new PictureConfig.Builder()
+                .setListData((ArrayList<String>) adapter.getAllData())    //图片数据List<String> list
+                .setPosition(position)    //图片下标（从第position张图片开始浏览）
+                .setDownloadPath("SuperGank")    //图片下载文件夹地址
+                .needDownload(true)    //是否支持图片下载
+                .setPlacrHolder(R.mipmap.img_default)    //占位符图片（图片加载完成前显示的资源图片，来源drawable或者mipmap）
+                .build();
+        ImagePagerActivity.startActivity(mContext, config);
     }
 
-    private void getData( int page) {
+    private void getData(int page) {
         SuperGankApplication.getRetrofit(Constant.PIC_BASE_URL)
                 .create(HotGirlService.class)
                 .getPicTwo(page)
@@ -119,7 +124,7 @@ public class HotGirlActivity extends BaseActivity implements SwipeRefreshLayout.
 
                     @Override
                     public void onNext(String response) {
-                        List<String> list=ImageHelper.saveImages(DBParser.parse(response));
+                        List<String> list = ImageHelper.saveImages(DBParser.parse(response));
                         adapter.addAll(list);
                     }
                 });

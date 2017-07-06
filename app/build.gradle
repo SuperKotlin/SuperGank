@@ -8,8 +8,8 @@ android {
         applicationId "com.zhuyong.supergank"
         minSdkVersion 14
         targetSdkVersion 22
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "2.1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
@@ -52,4 +52,5 @@ dependencies {
     apt 'com.jakewharton:butterknife-compiler:8.0.1'
     compile 'com.afollestad.material-dialogs:core:0.9.0.2'
     compile 'com.afollestad.material-dialogs:commons:0.9.0.2'
+    compile 'com.github.SuperKotlin:PictureViewer:1.0.1'
 }

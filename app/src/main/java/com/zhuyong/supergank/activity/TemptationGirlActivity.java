@@ -1,16 +1,16 @@
 package com.zhuyong.supergank.activity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.StaggeredGridLayoutManager;
-import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import com.SuperKotlin.pictureviewer.ImagePagerActivity;
+import com.SuperKotlin.pictureviewer.PictureConfig;
 import com.jude.easyrecyclerview.EasyRecyclerView;
 import com.jude.easyrecyclerview.adapter.RecyclerArrayAdapter;
 import com.umeng.analytics.MobclickAgent;
@@ -119,10 +119,14 @@ public class TemptationGirlActivity extends BaseActivity implements SwipeRefresh
     }
 
     private void jumpActivity(RecyclerArrayAdapter<String> adapter, int position) {
-        Intent intent = new Intent(mContext, ImagePagerActivity.class);
-        intent.putExtra(ImagePagerActivity.EXTRA_IMAGE_URLS, (ArrayList<String>) adapter.getAllData());
-        intent.putExtra(ImagePagerActivity.EXTRA_IMAGE_INDEX, position);
-        mContext.startActivity(intent);
+        PictureConfig config = new PictureConfig.Builder()
+                .setListData((ArrayList<String>) adapter.getAllData())    //图片数据List<String> list
+                .setPosition(position)    //图片下标（从第position张图片开始浏览）
+                .setDownloadPath("SuperGank")    //图片下载文件夹地址
+                .needDownload(true)    //是否支持图片下载
+                .setPlacrHolder(R.mipmap.img_default)    //占位符图片（图片加载完成前显示的资源图片，来源drawable或者mipmap）
+                .build();
+        ImagePagerActivity.startActivity(mContext, config);
     }
 
     private void getData(String cid, int page) {

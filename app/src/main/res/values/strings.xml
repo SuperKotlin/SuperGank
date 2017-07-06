@@ -15,6 +15,6 @@
     <string name="location_error">定位失败啦，请检查定位权限或者点击屏幕重试吧</string>
     <string name="exit">再按一次退出应用</string>
     <string name="share_to">分享到</string>
-    <string name="about_me">\n简 书：<a href="http://www.jianshu.com/users/c96d2a9d160f/timeline">helloworld_joy</a>\n\nGithub：<a href="https://github.com/SuperKotlin">SuperKotlin</a></string>
+    <string name="about_me">\n简 书：<a href="http://www.jianshu.com/users/c96d2a9d160f/timeline">BraveJoy</a>\n\nGithub：<a href="https://github.com/SuperKotlin">SuperKotlin</a></string>
 
 </resources>
