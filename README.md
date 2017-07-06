@@ -29,7 +29,7 @@ SupeiGank是一个练手用的小项目，其中可以学到butterknife、cardvi
          compile 'de.hdodenhof:circleimageview:2.1.0'
          compile 'com.android.support:cardview-v7:26.0.0-alpha1'
          compile 'cn.qqtheme.framework:ColorPicker:1.1.3'//颜色选择
-    	 compile 'com.github.SuperKotlin:PictureViewer:1.0.1'
+         compile 'com.github.SuperKotlin:PictureViewer:1.0.1'//图片查看器
     }
 
 ### 感谢
