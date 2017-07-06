@@ -16,7 +16,7 @@ SupeiGank是一个练手用的小项目，其中可以学到butterknife、cardvi
 
 
 
-## 使用到的库
+## 使用到的主要的库
     dependencies {
          compile 'io.reactivex:rxjava:1.1.5'
          compile 'io.reactivex:rxandroid:1.2.0'
@@ -24,24 +24,12 @@ SupeiGank是一个练手用的小项目，其中可以学到butterknife、cardvi
          compile 'com.squareup.retrofit2:converter-gson:2.0.0'
          compile 'com.squareup.retrofit2:adapter-rxjava:2.0.0'
          compile 'com.squareup.retrofit2:converter-scalars:2.0.0-beta4'
-         compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
          compile 'com.squareup.picasso:picasso:2.5.2'
          compile 'com.jude:easyrecyclerview:3.5.7'
-         compile 'com.android.support:design:26.0.0-alpha1'
          compile 'de.hdodenhof:circleimageview:2.1.0'
-         compile 'org.jsoup:jsoup:1.8.3'
          compile 'com.android.support:cardview-v7:26.0.0-alpha1'
-         compile 'com.mikepenz:iconics-core:2.5.5@aar'
-         compile 'com.mikepenz:material-design-iconic-typeface:2.2.0.1@aar'
-         compile 'com.mikepenz:fontawesome-typeface:4.5.0.1@aar'
-         compile 'com.mikepenz:foundation-icons-typeface:3.0.0.1@aar'
-         compile 'com.umeng.analytics:analytics:latest.integration'
-         compile 'com.amap.api:location:latest.integration'
          compile 'cn.qqtheme.framework:ColorPicker:1.1.3'//颜色选择
-         compile 'com.jakewharton:butterknife:8.0.1'
-         apt 'com.jakewharton:butterknife-compiler:8.0.1'
-         compile 'com.afollestad.material-dialogs:core:0.9.0.2'
-         compile 'com.afollestad.material-dialogs:commons:0.9.0.2'
+    	 compile 'com.github.SuperKotlin:PictureViewer:1.0.1'
     }
 
 ### 感谢
